@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre Franklin:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap");
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "nunito", sans-serif;
+}
+
+content {
+  margin-top: 150px;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.z-index {
+  z-index: 2;
+}
+
+.bg-full {
+  position: relative;
+  padding: 50px 0;
+}
+.bg-full ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100vw;
+  background-color: #dee2e6;
+  z-index: -1;
+}
+
+.bg-full-lightBlue {
+  position: relative;
+  padding: 50px 0;
+}
+.bg-full-lightBlue ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100vw;
+  background-color: #9CD3DB;
+  z-index: -1;
+}
+
+.btn-primary {
+  background-color: #F3CC22;
+  color: rgb(40, 46, 46);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #9CD3DB;
+}
+
+.btn-round {
+  border-radius: 30px;
+}
+
+.btn-custom {
+  border: 1px solid;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+  color: #f3f3f3;
+}
+
+.btn-outline-custom {
+  padding: 15px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.5s;
+  letter-spacing: 0.6px;
+  color: #fff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.231372549);
+  text-transform: uppercase;
+  outline: none !important;
+  border: 2px solid #f5f5f5;
+  text-shadow: 0px 0px 8px #000000;
+}
+
+.btn-outline-custom:hover,
+.btn-outline-custom:focus,
+.btn-outline-custom:active,
+.btn-outline-custom.active,
+.btn-outline-custom.focus,
+.btn-outline-custom:active,
+.btn-outline-custom:focus,
+.btn-outline-custom:hover,
+.open > .dropdown-toggle.btn-outline-custom {
+  color: #000;
+  background-color: #9CD3DB;
+  border-color: #fff;
+  text-shadow: none;
+}
+
+/* HEADER
+================================================== */
+.navbar {
+  z-index: 10;
+}
+.navbar .nav-link {
+  color: rgb(50, 50, 50);
+  font-size: 14px;
+}
+.navbar .nav-link:hover {
+  color: #9CD3DB;
+  font-weight: 600;
+}
+.navbar .active {
+  color: #f2cb20 !important;
+}
+.navbar .language {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.navbar .language:hover {
+  color: #9CD3DB;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* HERO
+================================================== */
+.clip-home {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 59% 100%, 0 83%);
+          clip-path: polygon(0 0, 100% 0, 100% 83%, 59% 100%, 0 83%);
+  position: relative;
+  z-index: 5;
+}
+
+.section {
+  padding-top: 0;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.header-bg-img {
+  background-image: url(/src/assets/images/hero_sample_3X2.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-overlay {
+  background-color: rgba(142, 97, 0, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-content {
+  max-width: 800px;
+}
+.header-content span {
+  color: #F3CC22;
+  font-weight: 800;
+}
+
+.first-title {
+  font-family: "nunito", sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  color: #ffffff;
+  text-shadow: -1px -1px 6px rgba(0, 0, 0, 0.3254901961), 4px 4px 12px #000000;
+}
+.first-title span {
+  font-family: "libre franklin", serif;
+  font-weight: 400;
+  text-shadow: -1px -1px 6px rgba(0, 0, 0, 0.4156862745), 7px 7px 20px #000000;
+}
+
+.header-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  text-shadow: -1px -1px 6px rgba(0, 0, 0, 0.3254901961), 7px 7px 20px rgba(0, 0, 0, 0.3254901961);
+}
+.header-name span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  color: #F3CC22;
+  font-weight: 900;
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.2509803922), 7px 7px 20px rgba(0, 0, 0, 0.3254901961);
+}
+
+.header-desc {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-align: center;
+  max-width: 500px;
+  line-height: 3;
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.338);
+}
+
+/* ABOUT
+================================================== */
+.about {
+  margin-top: -270px;
+  padding-bottom: 50px;
+}
+.about .section-about {
+  padding-top: 270px;
+}
+.about .text-about {
+  color: rgb(40, 46, 46);
+  padding: 20px 10px;
+}
+.about .text-about span {
+  font-size: 24px;
+}
+.about .logo-about {
+  min-width: 75%;
+  padding: 60px 80px;
+}
+
+/* FAQ
+================================================== */
+.accordion li {
+  padding-left: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #F3CC22;
+  color: rgb(40, 46, 46);
+}
+
+.accordion-item {
+  border: none;
+}
+.accordion-item :focus {
+  border: none;
+  box-shadow: none;
+}
+
+/* FOOTER
+================================================== */
+.copyright {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  padding: 0;
+}
+.copyright .btn-link {
+  color: #F3CC22;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.copyright .btn-link:hover {
+  color: #9CD3DB;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: #343a40;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.footer .logoFooter {
+  max-width: 60%;
+  max-height: auto;
+  padding: 50px 0;
+}
+.footer .sociaux {
+  color: #ffffff;
+  font-size: 24px;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+}
+.footer .sociaux:hover {
+  color: #9CD3DB;
+}
+.footer .contact {
+  padding-top: 0px;
+  font-size: 14px;
+}
+.footer .contact a[href^="tel:"] {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .contact a[href^="tel:"]:hover {
+  color: #9CD3DB;
+}
+.footer .contact a[href^="mailto:"] {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .contact a[href^="mailto:"]:hover {
+  color: #9CD3DB;
+}
+.footer .contact .text {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer .contact .text:hover {
+  color: #9CD3DB;
+}
+.footer .contact i {
+  color: #fff;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.4));
+}
+
+/* MODAL POLITIC
+================================================== */
+.politic .modal-header {
+  background-color: #F3CC22;
+}/*# sourceMappingURL=styles.css.map */
