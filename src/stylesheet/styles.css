@@ -21,6 +21,14 @@ content {
   z-index: 2;
 }
 
+.line {
+  clear: both;
+  position: relative;
+  width: 100%;
+  margin: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .bg-full {
   position: relative;
   padding: 50px 0;
@@ -258,6 +266,24 @@ content {
   box-shadow: none;
 }
 
+/* ADVANTAGES
+================================================== */
+.fadeIn {
+  animation: fadeIn 100s;
+  -webkit-animation: fadeIn 100s;
+  -moz-animation: fadeIn 100s;
+  -o-animation: fadeIn 100s;
+  -ms-animation: fadeIn 100s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* FOOTER
 ================================================== */
 .copyright {
