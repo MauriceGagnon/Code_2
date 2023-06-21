@@ -289,7 +289,7 @@ content{
 ================================================== */
 .feature-box{
     // opacity: 0;
-    // animation: fadeIn 2s ease-in;
+    animation: fadeIn 2s ease-in;
 }
 .fadeIn {
     animation: fadeIn 100s;
@@ -297,32 +297,32 @@ content{
     -moz-animation: fadeIn 100s;
     -o-animation: fadeIn 100s;
     -ms-animation: fadeIn 100s;
-  }
-  
-  @keyframes fadeIn {
+    }
+
+    @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
-  
-  @-moz-keyframes fadeIn {
+    }
+
+    @-moz-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
-  
-  @-webkit-keyframes fadeIn {
+    }
+
+    @-webkit-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
-  
-  @-o-keyframes fadeIn {
+    }
+
+    @-o-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
-  
-  @-ms-keyframes fadeIn {
+    }
+
+    @-ms-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
+    }
 
 /* FOOTER
 ================================================== */
