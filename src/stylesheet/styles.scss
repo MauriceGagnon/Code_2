@@ -1,5 +1,6 @@
 @import "./variables"; 
 @import "./products";
+@import "./contact";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre Franklin:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
@@ -18,6 +19,11 @@ body {
     height: 100%;
 }
 
+.nav-space{
+    height: 55px;
+    background-color: #252525;
+}
+
 content{
     margin-top: 150px;
 }
@@ -34,8 +40,7 @@ content{
     clear: both;
     position: relative;
     width: 100%;
-    margin: 50px;
-    border-top: 1px solid rgb(0 0 0 / 0.1);
+    border-top: 1px solid rgba(100, 100, 100, 0.2);
 }
 
 .bg-full {
@@ -51,6 +56,9 @@ content{
         width: 100vw;
         background-color: $contrast-300;
         z-index: -1;
+    }
+    .theme-color{
+        background-color: $theme-color !important;
     }
 }
 
@@ -83,11 +91,28 @@ content{
     padding: 2px 6px;
     border-radius: 2px;
     font-size: 12px;
-    background-color: $primaryBtn;
+    background-color: $bleuciel;
     color: $textColor;
     border: none;
-        &:hover{
-            background-color: $bleuciel;
+    &:hover{
+        background-color: $theme-color;
+    }
+        a{
+            text-decoration: none;
+            color: $textColor;
+        }
+}
+
+.btn-contact{
+    // padding: 2px 6px;
+    font-size: 18px;
+    color: $bleuciel;
+    // border: none;
+    &:hover{
+        color: $theme-color;
+    }
+        a{
+            text-decoration: none;
         }
 }
 
@@ -117,28 +142,35 @@ content{
     font-weight: 700;
     transition: all 0.5s;
     letter-spacing: 0.6px;
-    color: #fff;
+    color: $bleuciel;
     box-shadow: 0px 0px 6px #0000003b;    
     text-transform: uppercase;
     outline: none !important;
-    border: 2px solid #f5f5f5;
+    border: 2px solid $bleuciel;
     text-shadow: 0px 0px 8px #000000;
+
+    &:hover{
+        color: $theme-color;
+        // background-color: $bleuciel;
+        border-color: $theme-color;
+        text-shadow: none;    
+    }
 }
 
-.btn-outline-custom:hover,
-.btn-outline-custom:focus,
-.btn-outline-custom:active,
-.btn-outline-custom.active,
-.btn-outline-custom.focus,
-.btn-outline-custom:active,
-.btn-outline-custom:focus,
-.btn-outline-custom:hover,
-.open > .dropdown-toggle.btn-outline-custom {
-    color: #000;
-    background-color: $bleuciel;
-    border-color: #fff;
-    text-shadow: none;
-}
+// .btn-outline-custom:hover,
+// .btn-outline-custom:focus,
+// .btn-outline-custom:active,
+// .btn-outline-custom.active,
+// .btn-outline-custom.focus,
+// .btn-outline-custom:active,
+// .btn-outline-custom:focus,
+// .btn-outline-custom:hover,
+// .open > .dropdown-toggle.btn-outline-custom {
+//     color: $bleuciel;
+//     background-color: $bleuciel;
+//     border-color: $bleuciel;
+//     text-shadow: none;
+// }
 
 
 /* HEADER
@@ -213,8 +245,8 @@ content{
 }
 
 .section {
-    padding-top: 0;
-    padding-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
     // background-color: #006eff;
 }
@@ -344,15 +376,11 @@ content{
 }
 
 
-
-
-
 /* FOOTER
 ================================================== */
 
 .copyright{
     background-color: rgb(0 0 0 / 0.1);
-    // display: inline;
     font-size: 14px;
     padding: 0;
 
@@ -360,8 +388,6 @@ content{
         color: $theme-color;            
         padding-left: 10px;
         text-decoration: none;
-        font-size: 14px;
-
 
         &:hover{
                 color: $bleuciel;
@@ -382,7 +408,7 @@ footer{
     .logoFooter{
         max-width: 60%;
         max-height: auto;
-        padding: 50px 0;
+        padding: 0px 0;
     }
     
     .sociaux{
@@ -395,7 +421,8 @@ footer{
     }
     
     .contact{
-        padding-top: 0px;
+        margin: 20px 0px;
+        padding: 0px;
         font-size: 14px;
 
 
@@ -428,6 +455,12 @@ footer{
             filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
         }
     }
+
+    @media only screen and (max-width: 320px) {
+        .copyright{
+            font-size: 10px;
+        }
+    }
 }
 
 /* MODAL POLITIC
@@ -437,8 +470,4 @@ footer{
         background-color: $theme-color;
     }
 }
-
-
-
-
 
