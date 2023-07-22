@@ -7,9 +7,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 
-html {
-    overflow-x: hidden;
-}
+// html {
+//     overflow-x: hidden;
+// }
 
 body {
     font-family: $body-font;
@@ -231,7 +231,8 @@ content{
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 /* HERO

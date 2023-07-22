@@ -1,8 +1,9 @@
 
 .hero {
-    // overflow-x: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-color: #2c2c2c;
-    height: 900px;
+    // height: 900px;
     
     .hero-header{
         .header-name{
@@ -24,7 +25,7 @@
     .product {
         position: absolute;
         width: 300px;
-        height: 500px;
+        // height: 500px;
         left: 0;
         right: 0;
         // top: 25px;
@@ -174,7 +175,7 @@
     }
     
     #item-3:checked ~ .player #test  {
-        transform: translateY(-148px);
+        transform: translateY(-150px);
     }
     
     #item-4:checked ~ .player #test  {
@@ -190,7 +191,7 @@
     }
 
     #item-7:checked ~ .player #test  {
-        transform: translateY(-453px);
+        transform: translateY(-455px);
     }
 }
 

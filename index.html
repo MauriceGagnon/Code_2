@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-        <link rel="stylesheet" , href="./src/stylesheet/styles.css" />
+        <link rel="stylesheet" , href="/src/stylesheet/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -19,19 +19,19 @@
         />
         <!-- Favicon
     ================================================== -->
-        <link rel="apple-touch-icon" sizes="180x180" href="src/assets/images/apple-touch-icon.png" />
-        <link rel="icon" href="src/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/images/apple-touch-icon.png" />
+        <link rel="icon" href="/src/favicon.ico" />
 
         <title>SOLIS - Solution solaire pour lampadaire</title>
     </head>
 
     <body class="d-flex flex-column min-vh-100">
         <!-- Header
-            ============================================= -->
+                ============================================= -->
         <header>
-            <nav class="navbar navbar-expand-md sticky shadow">
+            <nav class="navbar navbar-expand-md sticky shadow navbar_dark">
                 <div class="container">
-                    <a class="navbar-brand" href="/"><img class="logo-solis" src="/src/assets/images/solis_logo.svg" alt="logo_solis" /></a>
+                    <a class="navbar-brand" href="/"><img src="/src/assets/images/solis_logo.svg" alt="logo_solis" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -39,9 +39,6 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/">accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/src/pages/home2.html">produits</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/src/pages/services.html">services</a>
@@ -63,218 +60,244 @@
                 </div>
             </nav>
         </header>
-        <!-- Header end -->
 
-        <!-- Hero
-                ============================================= -->
-        <!-- START HERO -->
-        <content_home>
-            <section class="section h-100vh align-items-center d-flex clip-home header-bg-img mb-5">
-                <div class="bg-overlay"></div>
-                <div class="container z-index">
-                    <div class="row justify-content-end">
-                        <div class="col-lg-9 px-3">
-                            <div class="text-start header-content mx-auto px-3">
-                                <h2 class="first-title mb-4"><span>SOLIS</span> - LE SOLAIRE REPENSÉ</h2>
-                                <h1 class="header-name text-white mb-0">LAMPADAIRE SOLAIRE <span class="simple-text-rotate">ÉCONOMIQUE,ÉCOLOGIQUE,EFFICACE,POLYVALENT</span></h1>
-                                <p class="text-white mx-auto header-desc text-uppercase mt-4">Manufacturier - distributeur - installateur</p>
-                                <div class="mt-4 pt-2 text-center">
+        <!-- <hero> -->
+        <div class="container-fluid g-0">
+            <div class="hero">
+                <div class="row hero-header">
+                    <div class="row justify-content-center">
+                        <div class="col-12 ps-4">
+                            <div class="text-center header-content mx-auto">
+                                <h1 class="header-name">LE SOLAIRE <span>REPENSÉ</span></h1>
+                                <!-- <div class="mt-4 pt-2 text-center">
                                     <a href="/src/pages/contact.html" target="blank" class="btn btn-outline-custom btn-round">Contactez-nous</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- END HERO -->
+                <div class="col-12 block">
+                    <input type="radio" name="slider" id="item-1" checked />
+                    <input type="radio" name="slider" id="item-2" />
+                    <input type="radio" name="slider" id="item-3" />
+                    <input type="radio" name="slider" id="item-4" />
+                    <input type="radio" name="slider" id="item-5" />
+                    <input type="radio" name="slider" id="item-6" />
+                    <input type="radio" name="slider" id="item-7" />
 
-            <!-- START ABOUT -->
-            <div class="section bg-full">
-                <div class="container about px-5">
-                    <div class="row pb-5 justify-content-center section-about">
-                        <div class="col-12 col-lg-7 text-about">
-                            <span><strong>SOLIS</strong> est <strong>le spécialiste de l'éclairage solaire</strong> au Québec depuis plus de dix ans.</span><br /><br />
-                            Nos <strong>lampadaires solaires</strong> sont disponibles en version intégrée et conventionnelle. <br /><br />
-                            Nous développons des <strong>lampadaires</strong> autonomes pour divers usages tels que les parcs, les pistes cyclables, le camping, les débarcadères (arrêts d'autobus, marina, quai), les routes et bien d'autres
-                            applications. <br /><br />
-                            Nous œuvrons dans tous les secteurs de l'industrie tels que les municipalités, les entreprises, la construction, le pétrole ou les mines... Nous sommes également à la disposition de tous les consommateurs
-                            particuliers ou entreprises pour répondre à l'ensemble de leurs besoins d'éclairage et d'énergie.
-                        </div>
-                        <div class="col-12 col-lg-5 order-first order-lg-1 my-auto">
-                            <img class="img-fluid logo-about" src="src/assets/images/solis_logo.svg" alt="logo_solis" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- END ABOUT -->
-
-            <div class="bg-full-lightBlue">
-                <div class="container my-5">
-                    <div class="row px-5">
-                        <div class="col-12 col-lg-5">
-                            <img src="src/assets/images/environnement_2.png" class="img-fluid px-3" alt="environnement" />
-                        </div>
-                        <div class="col-12 col-lg-7 my-auto">
-                            <h1 class="mb-5">La solution écologique</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, est asperiores dolorem ex excepturi libero suscipit possimus molestiae porro dolores labore dicta eaque doloribus necessitatibus tenetur
-                                consequatur sunt aspernatur cum? Necessitatibus sequi dolores maiores explicabo, est odio libero non at quia alias aliquam mollitia tenetur labore ipsa exercitationem fugiat, ad eligendi? Recusandae obcaecati
-                                provident iusto odio sit error natus adipisci blanditiis, minus nesciunt cumque laudantium ab numquam corrupti ex est illo debitis tempore, vel ducimus?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- START MANAGER QUOTE -->
-
-            <div class="section">
-                <div class="container my-5">
-                    <div class="row px-5">
-                        <div class="col-12 col-lg-4 pb-5">
-                            <div>
-                                <img src="src/assets/images/man-posing.png" alt="Chrome" width="100%" height="100%" />
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-8 my-auto">
-                            <h1 class="mb-5" style="font-size: 40px">L'énergie propre à votre service</h1>
-                            <p>
-                                « L'éclairage solaire est intéressant pour les municipalités canadiennes. Par exemple, dans les parcs et espaces verts, ils permettent de préserver l'aspect naturel des lieux en évitant de passer par
-                                d'inesthétiques poteaux électriques. C'est aussi intéressant pour les municipalités nordiques non branchées sur le réseau, car celles-ci sont alimentées par de polluantes centrales thermiques au pétrole ou au
-                                gaz naturel».
-                            </p>
-                            <h3 class="fw-light float-end" style="font-size: 15px; color: #999">-Édouard Aubé, fondateur et président SOLIS</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="container my-5">
-                    <div class="row px-5">
-                        <div class="col-lg-8 my-auto">
-                            <h1 class="mb-5" style="font-size: 40px">Le nouvel éclairage</h1>
-                            <p>
-                                « L'éclairage solaire est intéressant pour les municipalités canadiennes. Par exemple, dans les parcs et espaces verts, ils permettent de préserver l'aspect naturel des lieux en évitant de passer par
-                                d'inesthétiques poteaux électriques. C'est aussi intéressant pour les municipalités nordiques non branchées sur le réseau, car celles-ci sont alimentées par de polluantes centrales thermiques au pétrole ou au
-                                gaz naturel».
-                            </p>
-                            <h3 class="fw-light float-end" style="font-size: 15px; color: #999">-Francis Tourigny, fondateur et directeur général SOLIS</h3>
-                        </div>
-                        <div class="col-lg-4 order-first order-lg-last pb-5">
-                            <div>
-                                <img src="src/assets/images/man.png" alt="Chrome" width="70%" height="70%" />
+                    <div class="player">
+                        <div class="upper-part">
+                            <div class="info-area" id="test">
+                                <label class="light-info" id="light-info-1">
+                                    <div class="title">SOLIS-030</div>
+                                    <div class="sub-line">
+                                        <div class="subtitle">30 Watts Monocrystallin</div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#solis-030" style="text-decoration: none"><span class="bi bi-caret-down-square"></span>&nbsp;Détails</button>
+                                    </div>
+                                </label>
+                                <label class="light-info" id="light-info-2">
+                                    <div class="title">SOLIS-050</div>
+                                    <div class="sub-line">
+                                        <div class="subtitle">50 Watts Monocrystallin</div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#solis-030" style="text-decoration: none"><span class="bi bi-caret-down-square"></span>&nbsp;Détails</button>
+                                    </div>
+                                </label>
+                                <label class="light-info" id="light-info-3">
+                                    <div class="title">SOLIS-080</div>
+                                    <div class="sub-line">
+                                        <div class="subtitle">80 Watts Monocrystallin</div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#solis-030" style="text-decoration: none"><span class="bi bi-caret-down-square"></span>&nbsp;Détails</button>
+                                    </div>
+                                </label>
+                                <label class="light-info" id="light-info-4">
+                                    <div class="title">SOLIS-130</div>
+                                    <div class="sub-line">
+                                        <div class="subtitle">130 Watts Monocrystallin</div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#solis-030" style="text-decoration: none"><span class="bi bi-caret-down-square"></span>&nbsp;Détails</button>
+                                    </div>
+                                </label>
+                                <label class="light-info" id="light-info-5">
+                                    <div class="title">SOLIS-200</div>
+                                    <div class="sub-line">
+                                        <div class="subtitle">200 Watts Monocrystallin</div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#solis-030" style="text-decoration: none"><span class="bi bi-caret-down-square"></span>&nbsp;Détails</button>
+                                    </div>
+                                </label>
+                                <label class="light-info" id="light-info-6">
+                                    <div class="title">SOLIS-300</div>
+                                    <div class="sub-line">
+                                        <div class="subtitle">300 Watts Monocrystallin</div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#solis-030" style="text-decoration: none"><span class="bi bi-caret-down-square"></span>&nbsp;Détails</button>
+                                    </div>
+                                </label>
+                                <label class="light-info" id="light-info-7">
+                                    <div class="title">SOLIS-400</div>
+                                    <div class="sub-line">
+                                        <div class="subtitle">400 Watts Monocrystallin</div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#solis-030" style="text-decoration: none"><span class="bi bi-caret-down-square"></span>&nbsp;Détails</button>
+                                    </div>
+                                </label>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- END MANAGER QUOTE -->
-
-            <!-- START ADVANTAGE -->
-
-            <div class="section">
-                <div class="container advantage">
-                    <div class="row d-flex">
-                        <div class="col-12 mt-4 mt-lg-3">
-                            <h1 class="py-5 ps-5">AVANTAGES DES <strong>LAMPADAIRES SOLAIRE</strong></h1>
-                        </div>
+                    <div class="products">
+                        <label class="product" for="item-1" id="light-1">
+                            <img src="/src/assets/images/test/item-1_2.png" />
+                        </label>
+                        <label class="product" for="item-2" id="light-2">
+                            <img src="/src/assets/images/test/item-1_2.png" />
+                        </label>
+                        <label class="product" for="item-3" id="light-3">
+                            <img src="/src/assets/images/test/item-1_2.png" />
+                        </label>
+                        <label class="product" for="item-4" id="light-4">
+                            <img src="/src/assets/images/test/item-1_2.png" />
+                        </label>
+                        <label class="product" for="item-5" id="light-5">
+                            <img src="/src/assets/images/test/item-1_2.png" />
+                        </label>
+                        <label class="product" for="item-6" id="light-6">
+                            <img src="/src/assets/images/test/item-1_2.png" />
+                        </label>
+                        <label class="product" for="item-7" id="light-7">
+                            <img src="/src/assets/images/test/item-1_2.png" />
+                        </label>
                     </div>
-
-                    <div class="row d-flex m-5">
-                        <div class="col-12 col-md-6 col-lg-4 text-start">
-                            <table class="table table-borderless">
-                                <tbody class="font-weight-normal">
-                                    <tr>
-                                        <td><i class="bi bi-lightning-charge"></i></td>
-                                        <td>
-                                            <p>
-                                                <strong>Économie d'énergie :</strong> Les lampadaires solaires utilisent l'énergie du soleil pour fonctionner, ce qui réduit leur consommation d'énergie et permet d'économiser de l'argent sur
-                                                les factures d'électricité.
-                                            </p>
-
-                                            <p></p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 text-start">
-                            <table class="table table-borderless">
-                                <tbody class="font-weight-normal">
-                                    <tr>
-                                        <td><i class="bi bi-piggy-bank"></i></td>
-                                        <td>
-                                            <p>
-                                                <strong>Coût initial plus faible :</strong> Les lampadaires solaires ne nécessitent pas de raccordement au réseau électrique, ce qui réduit considérablement les coûts d'installation par
-                                                rapport aux lampadaires traditionnels.
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 text-start">
-                            <table class="table table-borderless">
-                                <tbody class="font-weight-normal">
-                                    <tr>
-                                        <td><i class="bi bi-wrench-adjustable-circle"></i></td>
-                                        <td>
-                                            <p>
-                                                <strong>Économie d'entretien :</strong> Les lampadaires solaires ont une durée de vie plus longue que les lampadaires traditionnels et ne nécessitent pas de maintenance régulière, ce qui
-                                                permet d'économiser du temps et de l'argent.
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 text-start">
-                            <table class="table table-borderless">
-                                <tbody class="font-weight-normal">
-                                    <tr>
-                                        <td><i class="bi bi-globe-americas"></i></td>
-                                        <td>
-                                            <p>
-                                                <strong>Respect de l'environnement :</strong> Les lampadaires solaires sont une source d'énergie renouvelable, propre et respectueuse de l'environnement, ce qui réduit l'impact sur la planète.
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4 text-start">
-                            <table class="table table-borderless">
-                                <tbody class="font-weight-normal">
-                                    <tr>
-                                        <td><i class="bi bi-tools"></i></td>
-                                        <td>
-                                            <p><strong>Facilité d'installation :</strong> Les lampadaires solaires peuvent être facilement installés dans des endroits éloignés où l'accès au réseau électrique est difficile ou impossible.</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 text-start">
-                            <table class="table table-borderless">
-                                <tbody class="font-weight-normal">
-                                    <tr>
-                                        <td><i class="bi bi-shield-check"></i></td>
-                                        <td>
-                                            <p><strong>Sécurité :</strong> Les lampadaires solaires peuvent être utilisés pour éclairer les zones sombres et améliorer la sécurité dans les rues et les espaces publics.</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="z-index: 5">
+                        <div class="mt-4 py-5 text-center">
+                            <a href="/src/pages/contact.html" class="btn btn-outline-custom btn-round">Contactez-nous</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- </hero> -->
 
-            <!-- END ADVANTAGE -->
-        </content_home>
+        <!-- START ADVANTAGE -->
+        <div class="section">
+            <div class="container advantage">
+                <div class="row d-flex">
+                    <div class="col-12 mt-4 mt-lg-3">
+                        <h1 class="py-5 ps-5">AVANTAGES DES <strong>LAMPADAIRES SOLAIRE</strong></h1>
+                    </div>
+                </div>
+
+                <div class="row d-flex m-5">
+                    <div class="col-12 col-md-6 col-lg-4 text-start">
+                        <table class="table table-borderless">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td><i class="bi bi-lightning-charge"></i></td>
+                                    <td>
+                                        <p>
+                                            <strong>Économie d'énergie :</strong> Les lampadaires solaires utilisent l'énergie du soleil pour fonctionner, ce qui réduit leur consommation d'énergie et permet d'économiser de l'argent sur les
+                                            factures d'électricité.
+                                        </p>
+
+                                        <p></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-start">
+                        <table class="table table-borderless">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td><i class="bi bi-piggy-bank"></i></td>
+                                    <td>
+                                        <p>
+                                            <strong>Coût initial plus faible :</strong> Les lampadaires solaires ne nécessitent pas de raccordement au réseau électrique, ce qui réduit considérablement les coûts d'installation par rapport
+                                            aux lampadaires traditionnels.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-start">
+                        <table class="table table-borderless">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td><i class="bi bi-wrench-adjustable-circle"></i></td>
+                                    <td>
+                                        <p>
+                                            <strong>Économie d'entretien :</strong> Les lampadaires solaires ont une durée de vie plus longue que les lampadaires traditionnels et ne nécessitent pas de maintenance régulière, ce qui permet
+                                            d'économiser du temps et de l'argent.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-start">
+                        <table class="table table-borderless">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td><i class="bi bi-globe-americas"></i></td>
+                                    <td>
+                                        <p><strong>Respect de l'environnement :</strong> Les lampadaires solaires sont une source d'énergie renouvelable, propre et respectueuse de l'environnement, ce qui réduit l'impact sur la planète.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 text-start">
+                        <table class="table table-borderless">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td><i class="bi bi-tools"></i></td>
+                                    <td>
+                                        <p><strong>Facilité d'installation :</strong> Les lampadaires solaires peuvent être facilement installés dans des endroits éloignés où l'accès au réseau électrique est difficile ou impossible.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-start">
+                        <table class="table table-borderless">
+                            <tbody class="font-weight-normal">
+                                <tr>
+                                    <td><i class="bi bi-shield-check"></i></td>
+                                    <td>
+                                        <p><strong>Sécurité :</strong> Les lampadaires solaires peuvent être utilisés pour éclairer les zones sombres et améliorer la sécurité dans les rues et les espaces publics.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END ADVANTAGE -->
+
+        <!-- START PRODUCT -->
+        <div class="container">
+            <div class="line"></div>
+            <div class="row mx-auto">
+                <div class="col-12">
+                    <img src="/src/assets/images/produits_spec.PNG" class="img-fluid mx-auto d-flex" alt="" />
+                </div>
+            </div>
+        </div>
+        <!-- END PRODUCT -->
 
         <!-- Footer
 		============================================= -->
@@ -283,7 +306,7 @@
                 <div class="container p-4">
                     <div class="row d-flex">
                         <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                            <img src="src/assets/images/solis_logo.svg" style="height: 50%; width: 50%" alt="solis_logo" />
+                            <img src="/src/assets/images/solis_logo.svg" style="height: 50%; width: 50%" alt="solis_logo" />
 
                             <p class="mt-4 mt-lg-3">Solutions économique et écologique</p>
                         </div>
@@ -357,27 +380,30 @@
 
                     <!-- Modal body -->
                     <div class="modal-body p-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio ullam eligendi, porro consectetur doloribus tenetur nulla animi facere, vero accusantium id consequuntur illo ab exercitationem! Qui velit
-                        nemo nobis? Doloremque quo dolorum facilis similique velit iste adipisci non exercitationem earum hic fuga placeat aut aperiam vero maiores mollitia culpa, ea recusandae vel at amet tempora inventore eum. Dolor nulla
-                        voluptas autem, dignissimos tempore, optio praesentium magni voluptate beatae eaque expedita? Mollitia, rerum nisi! Laudantium accusamus sed sequi impedit tempora omnis, mollitia vero, rem distinctio sunt veritatis
-                        nulla ipsam, expedita similique? <br /><br />Dolorum distinctio quas quidem adipisci, quisquam, est aliquam quibusdam blanditiis ipsa neque nemo dolorem laboriosam consequuntur dolores odio eos at officia earum quam?
-                        Ad nihil ullam autem quibusdam hic ea consequuntur eius ut deserunt dolore odit ab voluptatibus voluptas a sunt consequatur voluptate officia blanditiis et vitae cumque quis, est ipsa! Recusandae inventore corporis
-                        quidem quae voluptatum possimus nobis beatae omnis, molestiae iusto mollitia magnam. Eum ratione commodi optio, saepe dolor ipsa nobis fugit quis provident, dicta, similique harum id at expedita voluptatem!
-                        Consectetur aliquid voluptate nihil est quaerat, dolorum perspiciatis, ex excepturi voluptatem libero eius voluptatibus nobis eveniet ratione assumenda. Veritatis dolore cum minima ex saepe ut obcaecati ad, quis
-                        ipsam minus, nihil sapiente esse dolor ducimus blanditiis nostrum, sint error mollitia nulla? Officiis nisi adipisci voluptatum minima, illum similique nulla omnis odit a, facere consequatur culpa consectetur
-                        laboriosam ipsa debitis tempora. Soluta praesentium maiores nisi neque sint placeat optio deleniti aliquam, ipsa sed eius numquam consectetur aut consequatur illo sapiente ipsum labore officiis odit hic. Saepe
-                        tempore sint minus, odit officia, vero, voluptate reiciendis dignissimos alias dolorum tenetur nulla. Magni ex quasi voluptate deserunt quos eligendi ducimus ipsa animi iure ea harum accusamus suscipit atque, amet
-                        incidunt sequi quas quibusdam possimus reprehenderit mollitia hic eos consequatur aut! Ex dolores esse amet illum eligendi modi architecto, velit dolore. Iusto consectetur totam quibusdam consequatur numquam
-                        molestias veritatis tempora maiores adipisci porro nihil cum ipsam, sunt deleniti ipsum quisquam eius neque sequi explicabo. Provident explicabo molestiae eaque placeat sint, labore blanditiis magnam quos dolorum
-                        fugiat neque quasi, eveniet ducimus rerum, doloremque optio? Quae, itaque illum. Facilis necessitatibus quod nulla dignissimos consequuntur earum dicta animi, exercitationem culpa, vel rerum aliquam reprehenderit
-                        voluptas possimus ipsam beatae omnis similique, tenetur nihil in? <br /><br />Velit cumque, maiores voluptas dolores soluta minima earum aut vitae repellendus quisquam, fugit expedita corporis magni beatae. Inventore
-                        dicta quos, nemo maiores porro adipisci hic pariatur expedita laborum velit qui quisquam a molestiae eaque architecto dolorem quas facilis similique repudiandae deserunt amet at itaque. Vitae hic nostrum distinctio
-                        ea sunt similique, voluptatum eligendi libero exercitationem impedit illo, numquam earum a officia officiis, natus optio non quod consequatur ut pariatur corporis esse. Delectus, porro distinctio esse, numquam
-                        aliquid iusto cumque rem nostrum odio voluptas, nihil vel! Exercitationem eos, aspernatur amet earum nam fugiat facilis repudiandae nisi labore? Eius laborum, impedit animi aliquam commodi quasi accusantium labore
-                        deserunt beatae esse nobis laboriosam voluptas. Repudiandae, quia quod qui aut autem quas ullam ab eos eius, temporibus dolor consectetur aliquam, nihil asperiores tenetur praesentium odio tempora accusamus.
-                        Provident veniam ipsam numquam amet optio temporibus dolorem a aliquam laborum, ea quis nesciunt, qui voluptates repudiandae delectus architecto magni non laudantium! Voluptatem, praesentium quam natus nobis mollitia
-                        ut nam id unde enim velit quia fugiat qui nemo cupiditate sint et. Cumque eum officiis reprehenderit nulla tempore! At, sequi recusandae mollitia suscipit ad doloremque adipisci fugit ipsum corrupti ipsa nam
-                        distinctio dignissimos cupiditate nesciunt facere rem vitae provident unde qui ab minima, sunt officia quis quisquam. Incidunt vero tenetur maiores a quibusdam, voluptatibus voluptas recusandae consequatur quia odio!
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio ullam eligendi, porro consectetur doloribus tenetur nulla animi facere, vero accusantium id consequuntur illo ab exercitationem! Qui velit
+                            nemo nobis? Doloremque quo dolorum facilis similique velit iste adipisci non exercitationem earum hic fuga placeat aut aperiam vero maiores mollitia culpa, ea recusandae vel at amet tempora inventore eum. Dolor
+                            nulla voluptas autem, dignissimos tempore, optio praesentium magni voluptate beatae eaque expedita? Mollitia, rerum nisi! Laudantium accusamus sed sequi impedit tempora omnis, mollitia vero, rem distinctio sunt
+                            veritatis nulla ipsam, expedita similique? <br /><br />Dolorum distinctio quas quidem adipisci, quisquam, est aliquam quibusdam blanditiis ipsa neque nemo dolorem laboriosam consequuntur dolores odio eos at
+                            officia earum quam? Ad nihil ullam autem quibusdam hic ea consequuntur eius ut deserunt dolore odit ab voluptatibus voluptas a sunt consequatur voluptate officia blanditiis et vitae cumque quis, est ipsa!
+                            Recusandae inventore corporis quidem quae voluptatum possimus nobis beatae omnis, molestiae iusto mollitia magnam. Eum ratione commodi optio, saepe dolor ipsa nobis fugit quis provident, dicta, similique harum id
+                            at expedita voluptatem! Consectetur aliquid voluptate nihil est quaerat, dolorum perspiciatis, ex excepturi voluptatem libero eius voluptatibus nobis eveniet ratione assumenda. Veritatis dolore cum minima ex
+                            saepe ut obcaecati ad, quis ipsam minus, nihil sapiente esse dolor ducimus blanditiis nostrum, sint error mollitia nulla? Officiis nisi adipisci voluptatum minima, illum similique nulla omnis odit a, facere
+                            consequatur culpa consectetur laboriosam ipsa debitis tempora. Soluta praesentium maiores nisi neque sint placeat optio deleniti aliquam, ipsa sed eius numquam consectetur aut consequatur illo sapiente ipsum
+                            labore officiis odit hic. Saepe tempore sint minus, odit officia, vero, voluptate reiciendis dignissimos alias dolorum tenetur nulla. Magni ex quasi voluptate deserunt quos eligendi ducimus ipsa animi iure ea
+                            harum accusamus suscipit atque, amet incidunt sequi quas quibusdam possimus reprehenderit mollitia hic eos consequatur aut! Ex dolores esse amet illum eligendi modi architecto, velit dolore. Iusto consectetur
+                            totam quibusdam consequatur numquam molestias veritatis tempora maiores adipisci porro nihil cum ipsam, sunt deleniti ipsum quisquam eius neque sequi explicabo. Provident explicabo molestiae eaque placeat sint,
+                            labore blanditiis magnam quos dolorum fugiat neque quasi, eveniet ducimus rerum, doloremque optio? Quae, itaque illum. Facilis necessitatibus quod nulla dignissimos consequuntur earum dicta animi, exercitationem
+                            culpa, vel rerum aliquam reprehenderit voluptas possimus ipsam beatae omnis similique, tenetur nihil in? <br /><br />Velit cumque, maiores voluptas dolores soluta minima earum aut vitae repellendus quisquam,
+                            fugit expedita corporis magni beatae. Inventore dicta quos, nemo maiores porro adipisci hic pariatur expedita laborum velit qui quisquam a molestiae eaque architecto dolorem quas facilis similique repudiandae
+                            deserunt amet at itaque. Vitae hic nostrum distinctio ea sunt similique, voluptatum eligendi libero exercitationem impedit illo, numquam earum a officia officiis, natus optio non quod consequatur ut pariatur
+                            corporis esse. Delectus, porro distinctio esse, numquam aliquid iusto cumque rem nostrum odio voluptas, nihil vel! Exercitationem eos, aspernatur amet earum nam fugiat facilis repudiandae nisi labore? Eius
+                            laborum, impedit animi aliquam commodi quasi accusantium labore deserunt beatae esse nobis laboriosam voluptas. Repudiandae, quia quod qui aut autem quas ullam ab eos eius, temporibus dolor consectetur aliquam,
+                            nihil asperiores tenetur praesentium odio tempora accusamus. Provident veniam ipsam numquam amet optio temporibus dolorem a aliquam laborum, ea quis nesciunt, qui voluptates repudiandae delectus architecto magni
+                            non laudantium! Voluptatem, praesentium quam natus nobis mollitia ut nam id unde enim velit quia fugiat qui nemo cupiditate sint et. Cumque eum officiis reprehenderit nulla tempore! At, sequi recusandae mollitia
+                            suscipit ad doloremque adipisci fugit ipsum corrupti ipsa nam distinctio dignissimos cupiditate nesciunt facere rem vitae provident unde qui ab minima, sunt officia quis quisquam. Incidunt vero tenetur maiores a
+                            quibusdam, voluptatibus voluptas recusandae consequatur quia odio!
+                        </p>
                     </div>
 
                     <!-- Modal footer -->
@@ -388,12 +414,66 @@
             </div>
         </div>
 
-        <script src="src/assets/js/jquery.simple-text-rotator.js"></script>
-        <script>
-            $(".simple-text-rotate").textrotator({
-                animation: "fade",
-                speed: 2500,
-            });
-        </script>
+        <!-- The product detail Modal -->
+        <div class="modal modal-detail modal-lg" id="solis-030">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border-radius: 0 50px 50px 0">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-4 d-flex modal-image">
+                                <img src="/src/assets/images/solis-030.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <div class="col-lg-8 p-5">
+                                <div class="row">
+                                    <div class="col-10 mb-5">
+                                        <h4 class="modal-title">SOLIS-030</h4>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                </div>
+                                <div class="mb-5">
+                                    <table class="table table-borderless spec">
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-weight: bold">Solor panel</td>
+                                                <td>80 Watts Monocrystallin</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold">Control</td>
+                                                <td>SOLIS MPPT</td>
+                                            </tr>
+                                            <td style="font-weight: bold">Batteries</td>
+                                            <td>AGM / bushbar SOLIS - 720 Wh</td>
+                                            <tr>
+                                                <td style="font-weight: bold">Luminaire</td>
+                                                <td>Signify RoadFocus 20 Watts</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold">Construction</td>
+                                                <td>All aluminium / Powder Coated</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold">Dimenssions</td>
+                                                <td>44L x 31P x 28H</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold">Weight</td>
+                                                <td>100 lbs. (45kg)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="mb-5">
+                                    <button class="btn btn-detail">
+                                        <a href="/src/assets/documents/SOLIS-130-FR.pdf" target="_blank"><span class="bi bi-filetype-pdf"></span>&nbsp;Afficher la brochure</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
