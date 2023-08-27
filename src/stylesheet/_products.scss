@@ -68,28 +68,28 @@
     }
 
     #item-1:checked ~ .products #light-6, #item-2:checked ~ .products #light-7, #item-3:checked ~ .products #light-1, #item-4:checked ~ .products #light-2, #item-5:checked ~ .products #light-3, #item-6:checked ~ .products #light-4, #item-7:checked ~ .products #light-5 {
-        transform: translatex(-160%) scale(.6);
+        transform: translatex(-150%) scale(.6);
         filter: blur(1.5px);
         opacity: .6;
         z-index: 1;
     }
     
     #item-1:checked ~ .products #light-5, #item-2:checked ~ .products #light-6, #item-3:checked ~ .products #light-7, #item-4:checked ~ .products #light-1, #item-5:checked ~ .products #light-2, #item-6:checked ~ .products #light-3, #item-7:checked ~ .products #light-4 {
-        transform: translatex(-210%) scale(.4);
+        transform: translatex(-190%) scale(.4);
         filter: blur(2px);
         opacity: .4;
         z-index: 0;
     }
     
     #item-1:checked ~ .products #light-4, #item-2:checked ~ .products #light-5, #item-3:checked ~ .products #light-6, #item-4:checked ~ .products #light-7, #item-5:checked ~ .products #light-1, #item-6:checked ~ .products #light-2, #item-7:checked ~ .products #light-3 {
-        transform: translatex(210%) scale(.4);
+        transform: translatex(190%) scale(.4);
         filter: blur(2px);
         opacity: .4;
         z-index: 0;
     }
     
     #item-1:checked ~ .products #light-3, #item-2:checked ~ .products #light-4, #item-3:checked ~ .products #light-5, #item-4:checked ~ .products #light-6, #item-5:checked ~ .products #light-7, #item-6:checked ~ .products #light-1, #item-7:checked ~ .products #light-2 {
-        transform: translatex(160%) scale(.6);
+        transform: translatex(150%) scale(.6);
         filter: blur(1.5px);
         opacity: .6;
         z-index: 1;
@@ -114,12 +114,14 @@
     
     
     .player {
+        position: relative;
+        top: 400px;
+        left: 150px;
         // background-color: #a3a3a3;
         border-radius: 8px;
         min-width: 250px;
         padding: 10px 0 10px 30px;
         z-index: 5;
-        // margin-top: 25px;
         }
     
     .upper-part {
