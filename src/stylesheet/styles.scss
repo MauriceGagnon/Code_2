@@ -2,6 +2,9 @@
 @import "./products";
 @import "./contact";
 @import "./portfolio";
+@import "./portfolio copy";
+@import "./magnific-popup";
+@import "./glightbox.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre Franklin:wght@200;300;400;500;600;700;800;900;1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
@@ -173,6 +176,24 @@ content{
 //     text-shadow: none;
 // }
 
+/* BACK TO TOP
+================================================== */
+#back_top {
+    text-align: center;
+    position: fixed;
+    bottom: 150px;
+    right: 25px;
+    border: none;
+    background-color: transparent;
+    display: none;
+    z-index: 10000;
+}
+
+#back_top i {
+    color: $theme-color;
+    font-size: 40px;
+    display: block;
+}
 
 /* HEADER
 ================================================== */
